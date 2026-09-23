@@ -4,8 +4,9 @@
 
 The snippet definitions in `snippets/ruby.json` are derived from
 [Shopify Ruby LSP](https://github.com/Shopify/ruby-lsp/blob/main/vscode/snippets.json).
-They were previously distributed as part of the
-[Zed Ruby extension](https://github.com/zed-extensions/ruby).
+They were incorporated into the
+[Zed Ruby extension](https://github.com/zed-extensions/ruby) before this
+standalone extension was created.
 
 The original Ruby LSP snippets are licensed under the MIT License:
 
@@ -31,6 +32,10 @@ The original Ruby LSP snippets are licensed under the MIT License:
 > OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 > SOFTWARE.
 
-Portions were previously distributed by Zed Industries, Inc. under the Apache
-License, Version 2.0. This repository extracts the snippets into a standalone
-Zed extension and modifies them for that use.
+Portions incorporated from the Zed Ruby extension were distributed under the
+Apache License, Version 2.0:
+
+Copyright 2022 - 2024 Zed Industries, Inc.
+
+This repository extracts the snippets into a standalone Zed extension and
+modifies them for that use.
