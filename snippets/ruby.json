@@ -1,6 +1,6 @@
 {
   "New Minitest spec": {
-    "prefix": ["Minitest"],
+    "prefix": ["mtspec"],
     "body": [
       "# frozen_string_literal: true",
       "",
@@ -19,7 +19,7 @@
     "description": "New Minitest class using the spec syntax."
   },
   "New Minitest test": {
-    "prefix": ["Minitest"],
+    "prefix": ["mttest"],
     "body": [
       "# frozen_string_literal: true",
       "",
@@ -35,12 +35,12 @@
     ],
     "description": "New Minitest class using the test syntax."
   },
-  "New Rspec test": {
-    "prefix": ["Rspec"],
+  "New RSpec spec": {
+    "prefix": ["rspec"],
     "body": [
       "# frozen_string_literal: true",
       "",
-      "describe $1 do",
+      "RSpec.describe $1 do",
       "  describe \"$2\" do",
       "    it \"$3\" do",
       "      $0",
@@ -50,7 +50,7 @@
       "end",
       ""
     ],
-    "description": "New Minitest class using the spec syntax."
+    "description": "New RSpec spec."
   },
   "New class": {
     "prefix": ["class"],
@@ -122,7 +122,7 @@
     "body": ["find do |$1|", "  $0", "end"],
     "description": "New Ruby find loop."
   },
-  "Define method method": {
+  "Define method": {
     "prefix": ["def"],
     "body": ["def $1", "  $0", "end"],
     "description": "New method."
@@ -149,12 +149,12 @@
   },
   "If else": {
     "prefix": ["if"],
-    "body": ["if $1", "  $0", "else", "end"],
+    "body": ["if ${1:condition}", "  $2", "else", "  $0", "end"],
     "description": "New if statement with else."
   },
   "If elsif": {
     "prefix": ["if"],
-    "body": ["if $1", "  $0", "elsif $2", "  $0", "end"],
+    "body": ["if ${1:condition}", "  $2", "elsif ${3:condition}", "  $0", "end"],
     "description": "New if statement with elsif."
   }
 }
