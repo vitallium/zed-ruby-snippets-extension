@@ -4,6 +4,8 @@
     "body": [
       "# frozen_string_literal: true",
       "",
+      "require \"spec_helper\"",
+      "",
       "class $1 < Minitest::Spec",
       "  describe \"$2\" do",
       "    it \"$3\" do",
